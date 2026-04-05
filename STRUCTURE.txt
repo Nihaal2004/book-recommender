@@ -1,0 +1,42 @@
+Project Structure
+=================
+
+predictive/
+├── app/
+│   └── app.py                              (18 KB)  - Streamlit web application
+│
+├── data/
+│   ├── books.csv                           (3.3 MB) - Book metadata
+│   ├── ratings.csv                         (12 MB)  - User ratings
+│   ├── to_read.csv                         (9.4 MB) - Reading lists
+│   ├── tags.csv                            (722 KB) - Tag definitions
+│   └── book_tags.csv                       (16 MB)  - Book-tag associations
+│
+├── src/
+│   ├── data_loader.py                      (2 KB)   - Data loading utilities
+│   ├── data_cleaner.py                     (5 KB)   - Data cleaning functions
+│   ├── dataset_preparation.py              (4 KB)   - Dataset preparation
+│   ├── content_based_recommender.py        (5 KB)   - Content-based model
+│   ├── collaborative_filtering_recommender.py (6 KB) - CF model
+│   ├── hybrid_recommender.py               (6 KB)   - Hybrid model
+│   ├── evaluator.py                        (6 KB)   - Evaluation framework
+│   ├── main.py                             (5 KB)   - Main pipeline (full)
+│   └── quick_demo.py                       (6 KB)   - Quick demo (sampled)
+│
+├── outputs/
+│   ├── interactions_clean.csv              (268 KB) - Cleaned interactions
+│   ├── items_clean.csv                     (1.6 MB) - Cleaned items
+│   ├── evaluation_results.csv              (621 B)  - Model comparison
+│   ├── content_recommender.pkl             (803 MB) - Content model
+│   ├── cf_recommender.pkl                  (2.7 MB) - CF model
+│   └── hybrid_recommender.pkl              (804 MB) - Hybrid model
+│
+├── .gitignore                              (406 B)  - Git ignore rules
+├── README.md                               (6.9 KB) - Project documentation
+├── requirements.txt                        (113 B)  - Python dependencies
+├── GIT_WORKFLOW.md                         (2.4 KB) - Git commit guide
+├── PROJECT_SUMMARY.md                      (9 KB)   - Project summary
+└── instructions.md                         (8.5 KB) - Original instructions
+
+Total Files: 23 Python/config files + 6 data files
+Total Size: ~850 MB (mostly model pickle files)
